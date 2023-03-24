@@ -141,10 +141,6 @@ hr {
   color: #344563;
 }
 
-.project-subtitle p:first-child {
-  color: #344563;
-}
-
 .project-description button {
   border: none;
   border-radius: 5px;
