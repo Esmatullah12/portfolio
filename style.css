@@ -34,6 +34,7 @@ hr {
   background-color: transparent;
   font-size: 10px;
   color: var(--primary);
+  cursor: pointer;
 }
 
 .logo a {
@@ -89,6 +90,7 @@ hr {
 }
 
 .container {
+  display: grid;
   margin: 0 auto;
   width: 85%;
 }
@@ -141,13 +143,20 @@ hr {
   color: #344563;
 }
 
-.project-description button {
-  border: none;
-  border-radius: 5px;
+.project-description ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  color: #6070FF;
+}
+
+.project-description ul li {
+  background-color: #EBEBFF;
+  border-radius: 8px;
+  margin-right: 10px;
   padding: 4px 12px;
-  margin-right: 7px;
-  color: #6070ff;
-  background-color: #ebebff;
 }
 
 .regular-btn {
@@ -156,10 +165,28 @@ hr {
   line-height: 24px;
   border-radius: 10px;
   padding: 12px;
-  background-color: transparent;
+  background-color: white;
   border: 1px solid #6070ff;
   color: #6070ff;
   margin-top: 25px;
+  transition: 0.3s;
+}
+
+.regular-btn:hover {
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  background: #6070FF;
+  color: white;
+}
+
+.regular-btn:active {
+  background-color: #2230D2;
+  color: white;
+}
+
+.regular-btn:disabled {
+  background-color: white;
+  color: #5E6C84;
+  border-color: #5E6C84;
 }
 
 .about-title {
@@ -183,6 +210,11 @@ hr {
 
 .skills {
   justify-content: space-between;
+}
+
+.skills ul{
+  list-style: none;
+  padding-left: 0;
 }
 
 .skills-title {
