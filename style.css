@@ -11,7 +11,7 @@ body {
 }
 
 :root {
-  --primary: #6070ff
+  --primary: #6070ff;
 }
 
 .navbar {
@@ -31,7 +31,7 @@ body {
   color: var(--primary);
 }
 
-.logo a{
+.logo a {
   text-decoration: none;
   text-emphasis: none;
   font-weight: 700;
