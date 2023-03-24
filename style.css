@@ -10,9 +10,9 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-hr{
+hr {
   border: none;
-  border-top: 1px solid #DFE1E6;
+  border-top: 1px solid #dfe1e6;
 }
 
 :root {
@@ -87,6 +87,7 @@ hr{
   display: inline;
   margin-right: 13px;
 }
+
 .container {
   margin: 0 auto;
   width: 85%;
@@ -95,7 +96,7 @@ hr{
 .projects {
   margin: 100px auto;
   padding: 5%;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
   background-color: white;
 }
@@ -122,19 +123,19 @@ hr{
   font-size: 13px;
   line-height: 16px;
   font-weight: 600;
-  color: #7A869A;
+  color: #7a869a;
 }
+
 .project-subtitle p:first-child{
   color: #344563;
 }
 
 .project-subtitle span {
   border-radius: 50%;
-  background-color: #7A869A;
+  background-color: #7a869a;
   width: 8px;
   height: 8px;
-  margin: auto 15px;
-  
+  margin: auto 15px; 
 }
 
 .project-description p {
@@ -182,7 +183,6 @@ hr{
   background-color: white;
   padding: 90px 30px;
   border-radius: 0 80px 0 0;
-
 }
 
 .skills {
@@ -203,13 +203,12 @@ hr{
   border: none;
   background-color: transparent;
   font-size: 10px;
-  font-size: 10px;
 }
 
 .programming-lang li {
   display: flex;
   flex-direction: row;
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   margin: 15px auto;
   padding: 10px 20px;
   border-radius: 8px;
