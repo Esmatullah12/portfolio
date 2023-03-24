@@ -10,6 +10,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --primary: #6070ff
+}
+
 .navbar {
   padding: 5px 25px;
   height: 48px;
@@ -24,7 +28,7 @@ body {
   border: none;
   background-color: transparent;
   font-size: 10px;
-  color: #6070ff;
+  color: var(--primary);
 }
 
 .logo a{
@@ -34,7 +38,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   margin: 0;
-  color: #6070ff;
+  color: var(--primary);
 }
 
 .info {
