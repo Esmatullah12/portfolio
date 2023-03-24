@@ -10,6 +10,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+hr{
+  border: none;
+  border-top: 1px solid #DFE1E6;
+}
+
 :root {
   --primary: #6070ff;
 }
@@ -81,4 +86,146 @@ body {
 .contact-list li {
   display: inline;
   margin-right: 13px;
+}
+.container {
+  margin: 0 auto;
+  width: 85%;
+}
+
+.projects {
+  margin: 100px auto;
+  padding: 5%;
+  border: 1px solid #DFE1E6;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.tonic-project-img {
+  width: 100%;
+}
+
+.project-info {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+.project-name {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.project-subtitle {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #7A869A;
+}
+.project-subtitle p:first-child{
+  color: #344563;
+}
+
+.project-subtitle span {
+  border-radius: 50%;
+  background-color: #7A869A;
+  width: 8px;
+  height: 8px;
+  margin: auto 15px;
+  
+}
+
+.project-description p {
+  font-size: 15px;
+  font-weight: 400px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.project-description button {
+  border: none;
+  border-radius: 5px;
+  padding: 4px 12px;
+  margin-right: 7px;
+  color: #6070ff;
+  background-color: #ebebff;
+}
+
+.regular-btn {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  border-radius: 10px;
+  padding: 12px;
+  background-color: transparent;
+  border: 1px solid #6070ff;
+  color: #6070ff;
+  margin-top: 25px;
+}
+
+.about-title {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.about-me {
+  background-color: white;
+  padding: 90px 30px;
+  border-radius: 0 80px 0 0;
+
+}
+
+.skills {
+  justify-content: space-between;
+}
+
+.skills-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ability {
+  padding: 3%;
+}
+
+.skills button {
+  border: none;
+  background-color: transparent;
+  font-size: 10px;
+  font-size: 10px;
+}
+
+.programming-lang li {
+  display: flex;
+  flex-direction: row;
+  background-color: #F7F7F9;
+  margin: 15px auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.programming-lang li img {
+  margin-right: 18px;
+}
+
+.programming-lang {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-title p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
 }
