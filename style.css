@@ -126,22 +126,24 @@ hr {
   color: #7a869a;
 }
 
-.project-subtitle p:first-child{
-  color: #344563;
-}
+
 
 .project-subtitle span {
   border-radius: 50%;
   background-color: #7a869a;
   width: 8px;
   height: 8px;
-  margin: auto 15px; 
+  margin: auto 15px;
 }
 
 .project-description p {
   font-size: 15px;
   font-weight: 400px;
   line-height: 24px;
+  color: #344563;
+}
+
+.project-subtitle p:first-child {
   color: #344563;
 }
 
@@ -227,4 +229,8 @@ hr {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
+}
+
+.project-subtitle p:first-child {
+  color: #344563;
 }
