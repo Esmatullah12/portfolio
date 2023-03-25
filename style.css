@@ -171,10 +171,11 @@ hr {
   border-radius: 10px;
   padding: 12px;
   background-color: white;
-  border: 1px solid --primary;
+  border: 1px solid var(--primary);
   color: var(--primary);
   margin-top: 15px;
   transition: 0.3s;
+  border: 1px solid;
 }
 
 .regular-btn:hover {
