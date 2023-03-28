@@ -308,3 +308,19 @@ hr {
   font-family: "Poppins", sans-serif;
   height: 170px;
 }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.get-in-touch {
+  letter-spacing: 0.03em;
+  font-family: "Poppins", sans-serif;
+  padding: 12px 16px;
+}
+
+.get-in-touch:hover {
+  background-color: white;
+  color: var(--primary);
+}
