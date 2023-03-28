@@ -263,11 +263,11 @@ hr {
   color: #344563;
 }
 
-.contact-secion{
+.contact-secion {
   background-color: white;
 }
 
-.contact{
+.contact {
   background-color: var(--primary);
   font-family: "Poppins", sans-serif;
   color: white;
@@ -280,7 +280,7 @@ hr {
 
 
 
-.contact h2{
+.contact h2 {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
@@ -288,14 +288,15 @@ hr {
   
 }
 
-.contact p{
+.contact p {
   font-size: 17px;
   font-weight: 400;
   text-align: center;
   margin: 20px auto;
+  color: #ebebff;
 }
 
-.contact input{
+.contact input {
   font-size: 17px;
   margin-bottom: 20px;
 }
@@ -308,7 +309,7 @@ hr {
   color: #172b4d;
 }
 
-.contact textarea{
+.contact textarea {
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   height: 170px;
@@ -320,13 +321,13 @@ hr {
   justify-content: stretch;
 }
 
-.get-in-touch{
+.get-in-touch {
   letter-spacing: 0.03em;
   font-family: "Poppins", sans-serif;
   padding: 12px 16px;
 }
 
-.get-in-touch:hover{
+.get-in-touch:hover {
   background-color: white;
   color: var(--primary);
 }
