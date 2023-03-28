@@ -214,9 +214,6 @@ hr {
   border-radius: 0 80px 0 0;
 }
 
-.skills {
-}
-
 .skills ul {
   list-style: none;
   padding-left: 0;
@@ -259,6 +256,14 @@ hr {
   line-height: 24px;
 }
 
+.contact p {
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px auto;
+  color: #ebebff;
+}
+
 .project-subtitle p:first-child {
   color: #344563;
 }
@@ -271,29 +276,18 @@ hr {
   background-color: var(--primary);
   font-family: "Poppins", sans-serif;
   color: white;
-  padding:1%  7%;
+  padding: 1%  7%;
   border-radius: 80px 0 0 0;
   background-image: url(images/contact-bg-img.svg);
   background-position: right;
   background-repeat: no-repeat;
 }
 
-
-
 .contact h2 {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
-  margin-top: 120px;
-  
-}
-
-.contact p {
-  font-size: 17px;
-  font-weight: 400;
-  text-align: center;
-  margin: 20px auto;
-  color: #ebebff;
+  margin-top: 120px; 
 }
 
 .contact input {
@@ -331,4 +325,3 @@ hr {
   background-color: white;
   color: var(--primary);
 }
-
