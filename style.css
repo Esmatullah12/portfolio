@@ -214,10 +214,6 @@ hr {
   border-radius: 0 80px 0 0;
 }
 
-.skills {
-  justify-content: space-between;
-}
-
 .skills ul {
   list-style: none;
   padding-left: 0;
@@ -260,6 +256,67 @@ hr {
   line-height: 24px;
 }
 
+.contact p {
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px auto;
+  color: #ebebff;
+}
+
 .project-subtitle p:first-child {
   color: #344563;
+}
+
+.contact-secion {
+  background-color: white;
+}
+
+.contact {
+  background-color: var(--primary);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding: 1%  7%;
+  border-radius: 80px 0 0 0;
+  background-image: url(images/contact-bg-img.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.contact h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.contact input {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.form-style {
+  padding: 15px 16px;
+  border-radius: 8px;
+  border: 0 solid #cfd8dc;
+  outline: none;
+  color: #172b4d;
+}
+
+.contact textarea {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  height: 170px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.get-in-touch {
+  letter-spacing: 0.03em;
+  font-family: "Poppins", sans-serif;
+  padding: 12px 16px;
 }
