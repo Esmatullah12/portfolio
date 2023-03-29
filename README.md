@@ -142,6 +142,6 @@ I would like to thank Microverse for creating such wonderful opportunity for tho
 
 ## 📝 License <a name="license"></a>
 
-This project is <a href="https://github.com/Esmatullah12/portfolio/blob/add-form/LICENSE.md">MIT</a> licensed.
+This project is [MIT](./LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
