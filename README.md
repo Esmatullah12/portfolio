@@ -9,7 +9,6 @@
   - [🛠 Built With](#built-with)
       - [Tech Stack](#tech-stack)
       - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -49,12 +48,6 @@ This is my personal portfolio page design.
 - This is a sample of portfolio design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-This project does not have any live demo still.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
