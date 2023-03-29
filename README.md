@@ -144,4 +144,4 @@ I would like to thank Microverse for creating such wonderful opportunity for tho
 
 This project is [MIT]() licensed.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="https://github.com/Esmatullah12/portfolio/blob/main/LICENSE.md">back to top</a>)</p>
