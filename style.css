@@ -10,7 +10,7 @@ body {
 .primary-font {
   font-family: "Poppins", sans-serif;
 }
-languages
+
 h2 {
   margin: 0;
 }
@@ -130,9 +130,8 @@ hr {
 
 .projects:hover {
   border: 2px solid var(--primary);
-  filter: drop-shadow(0px 48px 48px rgba(37, 47, 137, 0.08));
+  filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
   cursor: pointer;
-
 }
 
 .project-img {
@@ -208,7 +207,6 @@ hr {
   border: 1px solid var(--primary);
   color: var(--primary);
   margin-top: 15px;
-  transition: 0.3s;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -383,11 +381,11 @@ hr {
     margin-left: 10px;
   }
 
-  .projects:nth-child(even) .project-img{
-    order: 1
+  .projects:nth-child(even) .project-img {
+    order: 1;
   }
 
-  .projects:nth-child(even) .project-info{
+  .projects:nth-child(even) .project-info {
     order: 0;
   }
 
