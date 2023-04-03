@@ -50,9 +50,9 @@ This is my personal portfolio page design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p
 
-## 🚀 Live Demo<a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
-To see the live verion of this portfolio click [here](https://esmatullah12.github.io/portfolio/)
+This project does not have any live demo still.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
