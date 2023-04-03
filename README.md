@@ -52,7 +52,7 @@ This is my personal portfolio page design.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-This project does not have any live demo still.
+To visit my portfolio website you can click [here](https://esmatullah12.github.io/portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
