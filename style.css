@@ -63,6 +63,10 @@ hr {
   color: #344563;
 }
 
+.menue-btn li a:hover {
+  color: #19376D;
+}
+
 .info {
   padding: 15vh 8%;
   background-image: url("images/header-shapes\ mobile.svg");
