@@ -140,6 +140,10 @@ hr {
   transition: transform 1s;
 }
 
+.project-img:hover {
+  transform: scale(1.02);
+}
+
 .project-info {
   text-align: left;
   font-family: "Poppins", sans-serif;
