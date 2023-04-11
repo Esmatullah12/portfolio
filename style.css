@@ -57,14 +57,27 @@ hr {
   display: flex;
 }
 
+.xmark {
+  font-size: 12px;
+  position: absolute;
+  top: 27px;
+  right: 8%;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.menue-btn.active {
+  height: 70vh;
+  display: block;
+}
+
 .menue-btn li a {
   text-decoration: none;
   padding: 10px 12px;
   color: #344563;
-}
-
-.menue-btn li a:hover {
-  color: #19376d;
+  transition: 0.2s;
 }
 
 .info {
@@ -371,12 +384,34 @@ hr {
 
 @media only screen and (max-width: 768px) {
   .menue-btn {
+    position: absolute;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background-color: #6070ff;
+    padding: 13vh 20px;
+    transition: 0.5s;
+    opacity: 0.88;
     display: none;
+  }
+
+  .menue-btn li a {
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+    line-height: 44px;
+  }
+
+  .menue-btn li {
+    margin-bottom: 25px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .nav-btn {
+  .nav-btn,
+  .xmark {
     display: none;
   }
 
@@ -429,4 +464,12 @@ hr {
   .contact {
     background-image: url(images/contact\ form\ background\ shapes.svg);
   }
+}
+
+.nav-btn.active li a {
+  font-size: 32px;
+  color: white;
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom: 20px;
 }
