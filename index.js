@@ -8,4 +8,4 @@ const xmark = document.querySelectorAll('.exam');
 xmark.onclick = function () {
   const navBar = document.querySelector('.menue-btn');
   navBar.classList.remove('active');
-  };
+};
