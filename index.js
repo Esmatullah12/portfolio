@@ -4,7 +4,7 @@ humburger.onclick = function () {
   navBar.classList.add('active');
 };
 
-const xmark = document.querySelectorAll('.exam');
+const xmark = document.querySelector('.xmark');
 xmark.onclick = function () {
   const navBar = document.querySelector('.menue-btn');
   navBar.classList.remove('active');
