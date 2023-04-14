@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -57,14 +61,27 @@ hr {
   display: flex;
 }
 
+.nav-xmark {
+  font-size: 12px;
+  position: absolute;
+  top: 27px;
+  right: 8%;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.menue-btn.active {
+  height: 75vh;
+  display: block;
+}
+
 .menue-btn li a {
   text-decoration: none;
   padding: 10px 12px;
   color: #344563;
-}
-
-.menue-btn li a:hover {
-  color: #19376d;
+  transition: 0.2s;
 }
 
 .info {
@@ -120,6 +137,14 @@ hr {
   display: grid;
 }
 
+.show {
+  display: flex;
+}
+
+.remove {
+  display: none;
+}
+
 .projects {
   display: grid;
   align-items: center;
@@ -153,7 +178,8 @@ hr {
   font-family: "Poppins", sans-serif;
 }
 
-.project-name {
+.project-name,
+.preview-project-title {
   font-weight: 700;
   font-size: 25px;
   line-height: 44px;
@@ -164,7 +190,7 @@ hr {
 .project-subtitle {
   display: flex;
   flex-direction: row;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 16px;
   font-weight: 600;
   color: #7a869a;
@@ -185,13 +211,25 @@ hr {
   color: #344563;
 }
 
-.project-description ul {
+.review-info-project {
+  font-size: 15px;
+  font-weight: 400px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.project-description ul,
+.preview-tech-list {
   list-style: none;
   padding-left: 0;
   display: flex;
   flex-direction: row;
   font-size: 12px;
   color: var(--primary);
+}
+
+.preview-tech-list {
+  margin: 0;
 }
 
 .tech-btn {
@@ -369,15 +407,166 @@ hr {
   padding: 12px 16px;
 }
 
+.nav-btn.active li a {
+  font-size: 32px;
+  color: white;
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom: 20px;
+}
+
+#preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(193, 199, 208, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 7;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.preview-project {
+  position: fixed;
+  top: 47%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  background-color: white;
+  width: 60%;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 1rem;
+}
+
+.pre-project-info {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 60% 40%;
+  margin: 0 auto;
+}
+
+.pre-project-info hr {
+  border-top: 2px solid #ebecf0;
+  margin: 5px 0 20px 0;
+}
+
+.preview-project-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin: 5px 0;
+}
+
+.preview-title-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.preview-project-xmark {
+  position: relative;
+  bottom: 15px;
+  font-size: 14px;
+  border: none;
+  background-color: white;
+  color: #67798e;
+  cursor: pointer;
+}
+
+.preview-project-img {
+  width: 100%;
+  height: 53vh;
+}
+
+.preview-btn {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.preview-btn:hover {
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  background-color: var(--primary);
+  color: white;
+}
+
+.preview-btn:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+.preview-btn img {
+  position: relative;
+  top: 4px;
+  height: 18px;
+  margin-left: 8px;
+}
+
 @media only screen and (max-width: 768px) {
   .menue-btn {
+    position: absolute;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background-color: #6070ff;
+    padding: 13vh 20px;
+    transition: 0.5s;
+    opacity: 0.88;
+    display: none;
+  }
+
+  .menue-btn li a {
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+    line-height: 44px;
+  }
+
+  .menue-btn li {
+    margin-bottom: 25px;
+  }
+
+  .pre-project-info {
+    grid-template-columns: 1fr;
+  }
+
+  .project-subtitle {
+    font-size: 13px;
+  }
+
+  .preview-project {
+    width: 90%;
+  }
+
+  .second-list-tech {
     display: none;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .nav-btn {
+  .nav-btn,
+  .nav-xmark {
     display: none;
+  }
+
+  .preview-project {
+    min-width: 700px;
   }
 
   .ruby-on-rails {

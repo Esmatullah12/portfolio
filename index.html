@@ -18,10 +18,11 @@
                 <button class="nav-btn"><i class="fa-solid fa-bars fa-2x"></i></button>
             </div>
             <ul class="menue-btn primary-font">
+                <li><button class="nav-xmark"><i class="fa-solid fa-xmark fa-2x"></i></button></li>
                 <li><a href="index.html">Portfolio</a></li>
                 <li><a href="#about-me">About</a></li>
                 <li><a href="#contact-section">Contact</a></li>
-            </ul>
+            </ul> 
         </nav>
     </header>
     <main>
@@ -40,117 +41,12 @@
             </div>
         </div>
 
-        <section id="works">
-            <div class="projects">
-                <div>
-                    <img class="project-img project-left-img" src="images/first project.svg" alt="Tonic project screenshot image">
-                </div>
-                <div class="project-info project-right-info">
-                    <div class="project-name">
-                        <h2>Tonic</h2>
-                    </div>
-                    <div class="project-subtitle">        
-                        <p>CANOPY</p>
-                        <span></span>
-                        <p>Back End Dev</p>
-                        <span></span>
-                        <p>2015</p>
-                    </div>
-                    <div class="project-description">
-                        <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                        <ul>
-                            <li class="tech-btn">html</li>
-                            <li class="tech-btn">css</li>
-                            <li class="tech-btn">javaScript</li>
-                        </ul>
-                    </div>
-                    <button class="regular-btn">See Project</button> 
-                </div>
-            </div>
-    
-            <div class="projects">
-                <div class="project-img project-right-img">
-                    <img class="project-img" src="images/second project.svg" alt="Multi-Post project screenshot image">
-                </div>
-                <div class="project-info project-left-info">
-                    <div class="project-name">
-                        <h2>Multi-Post Stories</h2>
-                    </div>
-                    <div class="project-subtitle">        
-                        <p>FACEBOOK</p>
-                        <span></span>
-                        <p>Full Stack Dev</p>
-                        <span></span>
-                        <p>2015</p>
-                    </div>
-                    <div class="project-description">
-                        <p>Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
-                        <ul>
-                            <li class="tech-btn">html</li>
-                            <li class="tech-btn ruby-on-rails">Ruby on rails</li>
-                            <li class="tech-btn">css</li>
-                            <li class="tech-btn">javaScript</li>
-                        </ul>
-                    </div>
-                    <button class="regular-btn">See Project</button> 
-                </div>
-            </div>
-    
-            <div class="projects">
-                <div class="project-img project-left-img">
-                    <img class="project-img" src="images/third project.svg" alt="">
-                </div>
-                <div class="project-info project-right-info">
-                    <div class="project-name">
-                        <h2>Facebook 360</h2>
-                    </div>
-                    <div class="project-subtitle">        
-                        <p>FACEBOOK</p>
-                        <span></span>
-                        <p>Full Stack Dev</p>
-                        <span></span>
-                        <p>2015</p>
-                    </div>
-                    <div class="project-description">
-                        <p>Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
-                        <ul>
-                            <li class="tech-btn">html</li>
-                            <li class="tech-btn ruby-on-rails">Ruby on rails</li>
-                            <li class="tech-btn">css</li>
-                            <li class="tech-btn">javaScript</li>
-                        </ul>
-                    </div>
-                    <button class="regular-btn">See Project</button> 
-                </div>
-            </div>
-    
-            <div class="projects">
-                <div class="project-img project-right-img">
-                    <img class="project-img" src="images/fourth project.svg" alt="Uber Navigation project screenshot image">
-                </div>
-                <div class="project-info project-left-info">
-                    <div class="project-name">
-                        <h2>Uber Navigation</h2>
-                    </div>
-                    <div class="project-subtitle">        
-                        <p>Uber</p>
-                        <span></span>
-                        <p>Lead Development</p>
-                        <span></span>
-                        <p>2018</p>
-                    </div>
-                    <div class="project-description">
-                        <p>A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
-                        <ul>
-                            <li class="tech-btn">html</li>
-                            <li class="tech-btn ruby-on-rails">Ruby on rails</li>
-                            <li class="tech-btn">css</li>
-                            <li class="tech-btn">javaScript</li>
-                        </ul>
-                    </div>
-                    <button class="regular-btn">See Project</button> 
-                </div>
-            </div>
+        <section>
+            <div id="works"></div>
+        </section>
+
+        <section id="preview" class="remove">
+            
         </section>
 
         <section id="about-me" class="primary-font about-me">
@@ -160,7 +56,7 @@
                 <a class="connect-btn" href="">LET’S CONNECT</a><br>
                 <button class="regular-btn">Get my resume</button> 
                 <div class="social-media-link">
-                    <ul class="contact-list">
+                    <ul class="contact-list project-tech-item">
                         <li><a href="https://twitter.com/Esmatullah173"><img src="icons/twitter.svg" alt="twitter icon"></a></li>
                         <li><a href="https://www.linkedin.com/in/esmatullah-qadeemi-b9951821b/"><img src="icons/linked.svg" alt="linkedin icon"></a></li>
                         <li><a href=""><img src="icons/Vector1.svg" alt="social media icon"></a></li>
@@ -174,7 +70,7 @@
                     <li>
                         <div class="skills-title">
                             <p>Languages</p>    
-                            <button><i class="fa-solid fa-angle-down fa-2x"></i></button>
+                            <button class="preview-xmark"><i class="fa-solid fa-angle-down fa-2x"></i></button>
                         </div>
                         <ul class="languages">
                             <li class="programming-lang">
@@ -228,5 +124,6 @@
         </section>
         
     </main>
+   <script src="index.js"></script>
 </body>
 </html>
