@@ -498,13 +498,13 @@ hr {
   margin-right: 5px;
 }
 
-.preview-btn:hover{
+.preview-btn:hover {
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   background-color: var(--primary);
   color: white;
 }
 
-.preview-btn:active{
+.preview-btn:active {
   background-color: #2230d2;
   color: white;
 }
