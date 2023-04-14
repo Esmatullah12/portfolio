@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -57,7 +61,7 @@ hr {
   display: flex;
 }
 
-.xmark {
+.nav-xmark {
   font-size: 12px;
   position: absolute;
   top: 27px;
@@ -72,6 +76,7 @@ hr {
   height: 75vh;
   display: block;
 }
+
 
 .menue-btn li a {
   text-decoration: none;
@@ -133,6 +138,14 @@ hr {
   display: grid;
 }
 
+.show{
+  display: flex;
+}
+
+.remove{
+  display: none;
+}
+
 .projects {
   display: grid;
   align-items: center;
@@ -151,7 +164,7 @@ hr {
   cursor: pointer;
 }
 
-.project-img {
+.project-img{
   width: 100%;
   margin: auto 0;
   transition: transform 1s;
@@ -166,7 +179,7 @@ hr {
   font-family: "Poppins", sans-serif;
 }
 
-.project-name {
+.project-name, .preview-project-title {
   font-weight: 700;
   font-size: 25px;
   line-height: 44px;
@@ -177,7 +190,7 @@ hr {
 .project-subtitle {
   display: flex;
   flex-direction: row;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 16px;
   font-weight: 600;
   color: #7a869a;
@@ -198,13 +211,24 @@ hr {
   color: #344563;
 }
 
-.project-description ul {
+.review-info-project{
+  font-size: 15px;
+  font-weight: 400px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.project-description ul, .preview-tech-list {
   list-style: none;
   padding-left: 0;
   display: flex;
   flex-direction: row;
   font-size: 12px;
   color: var(--primary);
+}
+
+.preview-tech-list{
+  margin: 0;
 }
 
 .tech-btn {
@@ -382,6 +406,80 @@ hr {
   padding: 12px 16px;
 }
 
+.nav-btn.active li a {
+  font-size: 32px;
+  color: white;
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom: 20px;
+}
+
+
+.preview-project{
+  margin: 20px auto;
+  box-sizing: border-box;
+  background-color: white;
+  width: 70%;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 1rem;
+} 
+
+.pre-project-info{
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 60% 40%;
+  margin: 0 auto;
+}
+
+.preview-project-title{
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin: 5px 0;
+}
+
+.preview-title-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.preview-project-xmark{
+  position: relative;
+  bottom: 15px;
+  font-size: 14px;
+  border: none;
+  background-color: white;
+  color: #67798e;
+  cursor: pointer;
+}
+.preview-project-img{
+  width: 100%;
+  height: 50%;
+}
+
+.preview-btn{
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.preview-btn img{
+  position: relative;
+  top: 4px;
+  height: 18px;
+  margin-left: 8px;
+}
+
 @media only screen and (max-width: 768px) {
   .menue-btn {
     position: absolute;
@@ -407,12 +505,33 @@ hr {
   .menue-btn li {
     margin-bottom: 25px;
   }
+
+  .pre-project-info{
+    grid-template-columns: 1fr;
+  }
+
+  .project-subtitle{
+    font-size: 13px;
+  }
+
+  .preview-project{
+    width: 90%;
+  }
+
+  .second-list-tech {
+    display: none;
+  }
+  
 }
 
 @media only screen and (min-width: 768px) {
   .nav-btn,
-  .xmark {
+  .nav-xmark {
     display: none;
+  }
+
+  .preview-project{
+    min-width: 700px;
   }
 
   .ruby-on-rails {
@@ -464,12 +583,4 @@ hr {
   .contact {
     background-image: url(images/contact\ form\ background\ shapes.svg);
   }
-}
-
-.nav-btn.active li a {
-  font-size: 32px;
-  color: white;
-  font-weight: 600;
-  line-height: 44px;
-  margin-bottom: 20px;
 }
