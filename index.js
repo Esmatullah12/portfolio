@@ -218,4 +218,3 @@ sendBtn.addEventListener('click', (val) => {
     email.value = '';
   }
 });
-
