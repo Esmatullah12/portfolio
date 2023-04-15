@@ -3,6 +3,15 @@ const projectsElm = document.getElementById('works');
 const navXmark = document.querySelector('.nav-xmark');
 const previewProject = document.getElementById('works');
 const preview = document.getElementById('preview');
+const sendBtn = document.getElementById('submit');
+const fullName = document.getElementById('full-name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+const form = document.getElementsByTagName('form');
+const messageErr = document.getElementById('messageErr');
+const sucessMessage = document.getElementById('sucessMessage');
+const emailErr = document.getElementById('emailErr');
+const fullNameErr = document.getElementById('fullNameErr');
 
 humburger.onclick = function () {
   const navBar = document.querySelector('.menue-btn');
@@ -143,4 +152,48 @@ preview.addEventListener('click', (val) => {
     preview.classList.add('remove');
   }
   createProjects();
+});
+
+fullNameErr.style.display = 'none';
+messageErr.style.display = 'none';
+emailErr.style.display = 'none';
+sucessMessage.style.display = 'none';
+
+sendBtn.addEventListener('click', (val) => {
+  val.preventDefault();
+  const validEmail = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+  if (fullName.value === '') {
+    fullName.style.border = '1px solid red';
+    fullNameErr.textContent = 'FullName is Required';
+    fullNameErr.style.color = 'red';
+    fullNameErr.style.display = 'block';
+  } else if (email.value === '') {
+    email.style.border = '1px solid red';
+    emailErr.textContent = 'Email Field Required';
+    emailErr.style.color = 'red';
+    emailErr.style.display = 'block';
+  } else if (!validEmail.test(email.value)) {
+    email.style.border = '1px solid red';
+    emailErr.textContent = 'Email address must be valid and in lower case';
+    emailErr.style.color = 'red';
+    emailErr.style.display = 'block';
+  } else if (message.value === '') {
+    email.style.border = '1px solid red';
+    emailErr.textContent = 'Email adress is required';
+    emailErr.style.color = 'red';
+    emailErr.style.display = 'block';
+  } else if (message.value.lenght > 500) {
+    email.style.border = '1px solid red';
+    emailErr.textContent = 'Email can not be more than 500 letters';
+    emailErr.style.color = 'red';
+    emailErr.style.display = 'block';
+  } else {
+    sucessMessage.textContent = 'Thanks message is sent';
+    sucessMessage.style.display = 'block';
+    sucessMessage.style.color = 'green';
+    form.submit();
+    fullName.value = '';
+    message.value = '';
+    email.value = '';
+  }
 });
