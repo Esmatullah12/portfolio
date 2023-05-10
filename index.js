@@ -159,6 +159,27 @@ messageErr.style.display = 'none';
 emailErr.style.display = 'none';
 sucessMessage.style.display = 'none';
 
+function preserveData() {
+  const userInfo = {
+    username: fullName.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('userInfo', JSON.stringify(userInfo));
+}
+
+fullName.addEventListener('focusout', preserveData);
+email.addEventListener('focusout', preserveData);
+message.addEventListener('focusout', preserveData);
+
+const data = JSON.parse(localStorage.getItem('userInfo'));
+
+if (data) {
+  fullName.value = data.username;
+  email.value = data.email;
+  message.value = data.message;
+}
+
 sendBtn.addEventListener('click', (val) => {
   val.preventDefault();
   const validEmail = /^[a-z]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
